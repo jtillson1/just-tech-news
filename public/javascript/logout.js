@@ -5,7 +5,8 @@ async function logout() {
     });
 
     if (response.ok) {
-        document.location.replace('/');
+        // i changed the routing here from / to /login...
+        document.location.replace('/login');
     } else {
         alert(response.statusText);
     }
